@@ -1,0 +1,39 @@
+- [x] **1. Typescript & API Layer Refactor**
+  - [x] `types/api.ts`: Ensure exact match with backend models.
+  - [x] `admin_api.ts`: Type all requests and responses, remove `any` casting, add error interceptors.
+- [x] **2. Dashboard Refactor (`BulkDashboardScreen.tsx`)**
+  - [x] Replace hardcoded stats / zeros with actual metrics or `N/A`.
+  - [x] Group into System Metrics, PDF Pipeline, Bulk Jobs.
+  - [x] Apply status color coding.
+- [x] **3. Bulk Create Refactor (`BulkCreateScreen.tsx`)**
+  - [x] Only use UUIDs for internal representation.
+  - [x] Clear Taluka when District changes, clear Village when Taluka changes.
+  - [x] Enforce `year_start <= year_end` with explicit error handling.
+  - [x] Dynamic year ranges (2000 to current year).
+- [x] **4. Bulk Detail Refactor (`BulkDetailScreen.tsx`)**
+  - [x] Separate Search Job Progress and PDF Pipeline Progress clearly.
+  - [x] Show actual counters instead of percentages.
+  - [x] Make `RATE_LIMITED` distinct from `FAILED`.
+  - [x] Stop infinite polling on terminal states (`COMPLETED`, `FAILED`, `CANCELLED`).
+  - [x] Graceful 500/404 fetch error handling.
+- [x] **5. Database Baseline Snapshot**
+  - [x] Capture counts BEFORE smoke test.
+- [x] **6. UI Smoke Test & Verification (Stages A-H)**
+  - [x] A. ADMIN_UI_REQUEST (Submit via UI/script acting as UI)
+  - [x] B. BULK_JOB_CREATED
+  - [x] C. SEARCH_JOB_CREATED
+  - [x] D. IGR_SEARCH_ATTEMPTED
+  - [x] E. IGR_SEARCH_RESULT
+  - [x] F. REGISTRATIONS_DISCOVERED
+  - [x] G. PDFTASKS_CREATED
+  - [x] H. PDF_PROCESSING
+- [x] **7. Location Integrity Test**
+  - [x] Verify Kannad vs Chopada scoping.
+- [x] **8. Post-Execution Test Suite**
+  - [x] `pytest -v`
+  - [x] `npx tsc --noEmit`
+  - [x] `npx expo export --platform web`
+- [x] **9. Database Final Snapshot & Delta Report**
+  - [x] Compare counts, state expected deltas.
+- [x] **10. Final Report (`scratch/admin_ui_final_audit.md`)**
+  - [x] Create detailed final report.

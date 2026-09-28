@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Project specific
+captcha.png
+*_sent.png
+state/
+responses/
+output/
+progress.json
+*.html
+!property_page.html
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# EasyOCR cache (no longer used - the CAPTCHAs go to an OpenAI model)
+.EasyOCR/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

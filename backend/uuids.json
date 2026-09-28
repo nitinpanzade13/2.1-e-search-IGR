@@ -1,0 +1,29 @@
+{
+  "dist_kannad": {
+    "id": "20227237-a650-4a8e-a4cd-0da202ae79a8",
+    "source_id": "30",
+    "name": "छत्रपती संभाजीनगर"
+  },
+  "tal_kannad": {
+    "id": "195a2880-99d3-4b55-b65f-650fe520f6b8",
+    "source_id": "3",
+    "name": "कन्नड"
+  },
+  "vill_talner": {
+    "id": "c3f6ee87-b9dd-426e-9002-91c2174da163",
+    "source_id": "81",
+    "name": "तळनेर"
+  },
+  "dist_jalgaon": {
+    "id": "c34cb3e0-f848-4ff8-ab81-ad94dcb94c81",
+    "source_id": "17",
+    "name": "जळगाव"
+  },
+  "tal_chopada": {
+    "id": "7f3b0dfc-5bae-468f-8c35-0fa852ba5523",
+    "source_id": "3",
+    "name": "चोपडा"
+  },
+  "vill_chopada_count": 119,
+  "chopada_has_talner": false
+}
